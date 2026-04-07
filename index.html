@@ -45,6 +45,7 @@
 						<a href="#"><i class="fal fa-download"></i>Installation</a>
 						<ul class="sub-menu">
 							<li><a href="#installation-theme">Theme Installation</a></li>
+							<li><a href="#installation-child">Child Theme</a></li>
 							<li><a href="#installation-plugin">Plugin Installation</a></li>
 							<li><a href="#installation-demo">Demo Installation</a></li>
 						</ul>
@@ -63,6 +64,7 @@
 						<ul class="sub-menu">
 							<li><a href="#post-add">How To Create Post</a></li>
 							<li><a href="#post-cat">How To Create Category</a></li>
+							<li><a href="#translation">Translation</a></li>
 						</ul>
 					</li>
 
@@ -103,6 +105,7 @@
 						<a href="#"><i class="fal fa-thumbs-up"></i> Thank you.</a>
 						<ul class="sub-menu">
 							<li><a href="#thank-you">Thank So Much</a></li>
+							<li><a href="#credits">Credits & Sources</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -119,13 +122,13 @@
 									<strong>Item Name : </strong> Heartly - Fundraising &amp; Charity WordPress Theme
 								</li>
 								<li>
-									<strong>Created: </strong>03 March 2026
+									<strong>Created: </strong>08 April 2026
 								</li>
 								<li><strong>Item Version : </strong> v 1.0</li>
 								<li>
 									<strong>Author : </strong>
-									<a href="https://themeforest.net/user/gramentheme/portfolio"
-										target="_blank">Gramentheme - Portfolio</a>
+									<a href="https://themeforest.net/user/pixel-plus/portfolio"
+										target="_blank">Pixel-plus - Portfolio</a>
 								</li>
 							</ul>
 							<p>
@@ -207,7 +210,7 @@
 						<hr>
 						<div id="getting-started-included" class="doc-box pt-80">
 							<h2 class="wlc-title">What's included</h2>
-							<p>When you purchase our theme from Themeforest, you need to download the Heartlyfiles
+							<p>When you purchase our theme from Themeforest, you need to download the Heartly files
 								from your
 								Themeforest account.
 								Navigate to your downloads tab on Themeforest and find Heartly. Click the download
@@ -269,42 +272,31 @@
 									<strong>Choose File</strong>
 									<p><img class="mt-10" src="img/common/upload-theme.png" alt=""></p>
 								</li>
-								<li>Navigate to the <strong>.zip</strong> file on your computer, then click
-									<strong>Install
-										Now</strong>
-									<p><img class="mt-10" src="img/common/chose-theme.png" alt=""></p>
-								</li>
 								<li>When the installation complete, click <strong>Activate</strong>. You will be
-									redirected to Themes page with Heartlyactivated.
-								
+									redirected to Themes page with Heartly activated.
 									<p><img class="mt-10" src="img/common/theme-active.png" alt=""></p>
 								</li>
-								<li><strong>Done.</strong></li>
 							</ol>
 
-							<hr>
-
-							<h4 class="wlc-title-inner mt-40 mb-10">Install theme via FTP</h4>
-							<p>
-								To manually upload your new WordPress theme, login with your
-								credentials to your website and locate the wp-content folder in your
-								WordPress install files. Upload the <b>un-zipped</b> 'heartly' folder
-								into the: wp-content/themes folder.
-							</p>
-							<p>
-								Once uploaded, activate the theme by heading to the “Themes” menu in
-								the WordPress Dashboard. Locate the Heartly theme and hit “Activate”.
-							</p>
-
-							<blockquote class="mt-40">
-								The theme files will be stored on your server in the
-								<code>wp-content/themes/</code> location.
-							</blockquote>
 							<p><strong>Note:</strong> When uploading your theme with the installer, please ensure you
 								are
 								uploading the theme .zip file, not the entire
-								package you downloaded. In this case, you will be uploading Heartly.zip.</p>
+								package you downloaded. In this case, you will be uploading <strong>heartly.zip</strong>.</p>
 
+						</div>
+						<hr>
+						<div id="installation-child" class="doc-box pt-80">
+							<h2 class="wlc-title">Child Theme Installation</h2>
+							<p>A child theme is a theme that inherits the functionality and styling of another theme, called the parent theme (in this case, Heartly). Child themes are the recommended way of modifying an existing theme.</p>
+							<p><strong>Why use a child theme?</strong> If you modify a theme directly and it is updated, your changes will be lost. By using a child theme, you can ensure that your modifications are preserved.</p>
+							<ol>
+								<li>Log in to your WordPress <strong>Dashboard</strong>.</li>
+								<li>Navigate to <strong>Appearance &gt; Themes.</strong></li>
+								<li>Click <strong>Add New</strong> &gt; <strong>Upload Theme</strong> &gt; <strong>Choose File</strong>.</li>
+								<li>Locate the <code>heartly-child.zip</code> file in your main package and upload it.</li>
+								<li>Click <strong>Install Now</strong> and then <strong>Activate</strong>.</li>
+							</ol>
+							<p><strong>Note:</strong> You must have the parent theme (Heartly) installed for the child theme to work.</p>
 						</div>
 						<hr>
 						<div id="installation-plugin" class="doc-box pt-80">
@@ -497,6 +489,20 @@
 								way.</p>
 						</div>
 						<hr>
+						<div id="translation" class="doc-box pt-80">
+							<h2 class="wlc-title">Translation</h2>
+							<p>Heartly is translation-ready! You can translate the theme into your own language easily using the <strong>Poedit</strong> software.</p>
+							
+							<h4 class="wlc-title-inner mt-40 mb-10">Manual Translation (Poedit)</h4>
+							<p>Poedit is a free software for translating themes and plugins into other languages.</p>
+							<ol>
+								<li>Find the <code>heartly.pot</code> file in the <code>/languages/</code> folder of the theme.</li>
+								<li>Open it with <a href="https://poedit.net/" target="_blank">Poedit</a>.</li>
+								<li>Create a new translation and save it as <code>your-language-code.po</code> (e.g., <code>es_ES.po</code>) and it will automatically generate the <code>.mo</code> file.</li>
+								<li>Upload these files to <code>wp-content/languages/themes/</code>.</li>
+							</ol>
+						</div>
+						<hr>
 
 
 
@@ -521,9 +527,6 @@
 								<li>Shop Settings</li>
 								<li>Import / Export</li>
 							</ul>
-							<br />
-							<br />
-							<img src="img/common/lotto-option.png" alt="">
 							<br />
 							<br />
 							<img src="img/common/theme-option.png" alt="">
@@ -635,6 +638,23 @@
 						</div>
 						<hr>
 
+						<div id="credits" class="doc-box pt-80">
+							<h2 class="wlc-title">Credits & Sources</h2>
+							<p>We have used the following images, icons, and scripts as listed below:</p>
+							
+							<ul class="ml-6 list-margin">
+								<li><strong>WordPress</strong> - <a href="https://wordpress.org/" target="_blank">wordpress.org</a></li>
+								<li><strong>Elementor</strong> - <a href="https://elementor.com/" target="_blank">elementor.com</a></li>
+								<li><strong>Bootstrap</strong> - <a href="http://getbootstrap.com/" target="_blank">getbootstrap.com</a></li>
+								<li><strong>Google Fonts</strong> - <a href="https://fonts.google.com/" target="_blank">fonts.google.com</a></li>
+								<li><strong>FontAwesome Icons</strong> - <a href="https://fontawesome.com/" target="_blank">fontawesome.com</a></li>
+								<li><strong>JQuery</strong> - <a href="https://jquery.org/" target="_blank">jquery.org</a></li>
+								<li><strong>GiveWP</strong> - <a href="https://givewp.com/" target="_blank">givewp.com</a></li>
+								<li><strong>Unsplash</strong> - <a href="https://unsplash.com/" target="_blank">unsplash.com</a> (Images for Demo Only)</li>
+							</ul>
+							<p><strong>Note:</strong> Images used in the demo are for demonstration purposes only and are not included in the main download package.</p>
+						</div>
+						<hr>
 						<div id="thank-you" class="doc-box pt-80">
 							<h2 class="wlc-title">Thank you for use this theme.</h2>
 							<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd
